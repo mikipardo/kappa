@@ -1,0 +1,27 @@
+BASE64->
+Base64 es un algoritmo de codificación que permite transformar cualquier carácter de cualquier idioma en un 	alfabeto que consta de letras, dígitos y signos latinos. no es un algoritmo de cifrado, se decodifica fácilmente. 	el tamaño del archivo aumenta en un 33%, ya que reemplaza cada 3 bytes por 4 bytes. Formula (n * 4 / 3). Se 	codifica en cadena de bite:	
+	->pasa asci, byte, padeo para cadena de 8... etc									-> decodificacion a la inversas, cuando son incompletos se usa ==
+
+HEXADECIMAL-> es aquel sistema de numeración que emplea 16 dígitos: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E y F;
+
+binario-> lo 0 y 1 de las máquinas necesario par comprender lenguaje e intruciones (encendido apagado)
+
+El codigo ASCII-> American Standard Code for Information Interchange PASO DE 128 A 255 para incorporar carácteres latinos,
+es para intercambio de información o el que usa los teclados. lleva tamboén caracter especiales de graficos. Usa nomenclatura decimal que lleva relacion con sus siglas en cada letra
+Criptografía asimétrica.
+Criptografía simétrica. ...
+Criptografía hash. ...
+Criptografía de ofuscación.
+con claves secretas o publicas...
+
+Encriptado tenemos algunos como 
+SHA-> no reflexividad. Es decir, no es posible determinar la cadena de bits de origen del
+MD5-> ya no se usa para cifrado de pas pero si para comprobar que un archivo es el original o para firmas digitales
+reduce el algoritmo generado y además comprueba que no haya sido modificado.
+cmac-> algoritmo de cifrados en bloque
+
+AES-> esquema de cifrado por bloques, Con una seguridad de 128, 192 o AES-256-GCM bits y un tamaño de bloque de 128 bits,
+seguro, rápido y eficiente. 
+
+*Nota: 256 bit son 32 byte
+un caracter tiene 7/8 bits y dependiendo si son de 0 a 127 primeros de AnsiII será 7 o si es de 128 a 255 será 8
