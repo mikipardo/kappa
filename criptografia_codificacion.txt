@@ -8,6 +8,10 @@ binario-> lo 0 y 1 de las máquinas necesario par comprender lenguaje e intrucio
 
 El codigo ASCII-> American Standard Code for Information Interchange PASO DE 128 A 255 para incorporar carácteres latinos,
 es para intercambio de información o el que usa los teclados. lleva tamboén caracter especiales de graficos. Usa nomenclatura decimal que lleva relacion con sus siglas en cada letra
+
+TIPOS DE CRIPOGRAFIA
+--------------------------
+
 Criptografía asimétrica.
 Criptografía simétrica. ...
 Criptografía hash. ...
