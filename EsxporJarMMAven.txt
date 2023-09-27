@@ -1,0 +1,2 @@
+Export/Java/Runnable Jar File   y en la ventana copy required libraires into a sub-folder next to generated Jar
+En Launch configuration poder el Main de la clase o proyecto
