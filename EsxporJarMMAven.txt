@@ -1,2 +1,7 @@
+En caso de runneble que es para generar por consola
+
+En primer lugar pon EXTRACT REQUERID LIBRARIES INTO GENERATED JAR
+
+SI esto no funciona puedes->
 Export/Java/Runnable Jar File   y en la ventana copy required libraires into a sub-folder next to generated Jar
 En Launch configuration poder el Main de la clase o proyecto
