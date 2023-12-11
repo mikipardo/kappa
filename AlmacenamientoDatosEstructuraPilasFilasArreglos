@@ -1,0 +1,29 @@
+Pila (Stack):
+
+La pila es una estructura de datos de tipo LIFO (Last In, First Out), lo que significa que el último elemento que se inserta es el primero en ser eliminado.
+La operación de inserción se llama "push", y la operación de eliminación se llama "pop".
+Los elementos de una pila se almacenan uno encima del otro, y solo se puede acceder al elemento superior.
+En términos sencillos, imagina una pila de platos: el último plato que colocas es el primero que tomas.
+Cola (Queue):
+
+La cola es una estructura de datos de tipo FIFO (First In, First Out), lo que significa que el primer elemento que se inserta es el primero en ser eliminado.
+La operación de inserción se llama "enqueue", y la operación de eliminación se llama "dequeue".
+Los elementos de una cola se almacenan uno detrás del otro, y se accede al elemento frontal para eliminarlo.
+En términos sencillos, imagina una cola en una tienda: el primero en llegar es el primero en ser atendido.
+Listas Enlazadas:
+
+En una lista enlazada, los elementos se almacenan en nodos que contienen tanto el valor del elemento como una referencia al siguiente nodo.
+Cada nodo apunta al siguiente nodo en la secuencia.
+Pueden ser listas enlazadas simples, donde los nodos solo apuntan al siguiente, o listas doblemente enlazadas, donde los nodos apuntan tanto al siguiente como al anterior.
+Arreglos (Arrays):
+
+Los arreglos son estructuras de datos que almacenan elementos de manera contigua en la memoria.
+Los elementos se acceden mediante un índice. La indexación comienza generalmente desde 0.
+Los arreglos tienen un tamaño fijo, y la inserción o eliminación de elementos puede ser costosa ya que puede requerir reorganizar todos los elementos.
+Árboles:
+
+En un árbol, los datos se organizan jerárquicamente.
+Un nodo raíz tiene varios nodos hijos, y cada uno de estos nodos puede tener sus propios hijos.
+Los nodos sin hijos se llaman hojas.
+Los árboles pueden ser binarios, n-arios, y pueden tener diversas formas según su propósito.
+Cada una de estas estructuras de datos tiene sus propias ventajas y desventajas, y la elección de la estructura dependerá de los requisitos específicos de tu aplicación y las operaciones que planeas realizar con los datos.
