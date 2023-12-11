@@ -1,0 +1,32 @@
+La clase HashMap en Java no es sincronizada, lo que significa que no está diseñada para ser segura en operaciones concurrentes. Si múltiples hilos acceden y modifican un HashMap simultáneamente
+sin sincronización externa, puede llevar a condiciones de carrera y corrupción de datos. Aquí hay algunas razones por las cuales HashMap no es seguro para operaciones multihilo:
+No Sincronizada:
+La implementación de HashMap no proporciona mecanismos internos de sincronización para gestionar el acceso concurrente. En situaciones de concurrencia, los hilos pueden leer y escribir datos
+simultáneamente sin restricciones, lo que puede dar lugar a problemas de coherencia y consistencia de datos.
+Operaciones No Atómicas:
+Aunque las operaciones individuales en HashMap (como get o put) son atómicas, las secuencias de operaciones no están garantizadas para ser atómicas. En un entorno multihilo, incluso operaciones simples
+como get pueden volverse problemáticas cuando hay escrituras concurrentes.
+Iteradores No Sincronizados:
+Los iteradores devueltos por HashMap no son seguros para la concurrencia. Si se modifica el HashMap después de que se haya creado un iterador, puede haber excepciones concurrentes o resultados inesperados.
+Alternativas Sincronizadas:
+Si necesitas usar un HashMap en un entorno multihilo, hay alternativas sincronizadas que proporcionan cierto nivel de seguridad para operaciones concurrentes. 
+Puedes utilizar Collections.synchronizedMap para envolver tu HashMap y obtener una versión sincronizada. Aquí tienes un ejemplo:
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
+
+public class EjemploHashMapSincronizado {
+    public static void main(String[] args) {
+        // Crear un HashMap
+        Map<String, Integer> mapa = new HashMap<>();
+
+        // Crear un HashMap sincronizado
+        Map<String, Integer> mapaSincronizado = Collections.synchronizedMap(mapa);
+
+        // Operaciones concurrentes en el mapa sincronizadoAl envolver el HashMap en un Collections.synchronizedMap, 
+obtienes un mapa sincronizado que puede ser más seguro para operaciones concurrentes. Sin embargo, ten en cuenta que la sincronización puede 
+tener un impacto en el rendimiento y no es la solución más eficiente en todos los casos. Otras estructuras de datos concurrentes, 
+como ConcurrentHashMap, están diseñadas específicamente para trabajar eficientemente en entornos multihilo sin requerir sincronización externa.
+        // ...
+    }
+}
